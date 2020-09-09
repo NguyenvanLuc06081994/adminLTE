@@ -8,6 +8,7 @@ import { MasterComponent } from './layout/master/master.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { DashboardComponent } from './layout/dashboard/dashboard.component';
 import { UserListComponent } from './components/users/user-list/user-list.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,10 +19,11 @@ import { UserListComponent } from './components/users/user-list/user-list.compon
     DashboardComponent,
     UserListComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        ReactiveFormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
